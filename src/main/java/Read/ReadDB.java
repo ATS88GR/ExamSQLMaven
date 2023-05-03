@@ -8,7 +8,6 @@ public class ReadDB {
     public static void readDB() throws ClassNotFoundException, SQLException
     {
         resSet = statmt.executeQuery("SELECT * FROM Departments");
-
         while(resSet.next())
         {
             int id = resSet.getInt("id");
