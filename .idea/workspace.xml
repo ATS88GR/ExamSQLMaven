@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61ac4ea7-abf5-4d9d-8cb0-187b1ed648f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Write/WriteDB.java" afterDir="false" />
+    <list default="true" id="61ac4ea7-abf5-4d9d-8cb0-187b1ed648f8" name="Changes" comment="first init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Close/CLoseBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Close/CLoseBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Connection/ConnectionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Connection/ConnectionDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Create/CreateDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Create/CreateDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Read/ReadDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Read/ReadDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Write/WriteDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Write/WriteDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/user/eclipse-workspace/Hospital2"
+    "last_opened_file_path": "D:/Progects/Hospital2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

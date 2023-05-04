@@ -3,6 +3,7 @@ package org.example;
 import Close.CLoseBD;
 import Connection.ConnectionDB;
 import Create.CreateDB;
+import Write.WriteDB;
 
 import java.sql.SQLException;
 
@@ -11,6 +12,7 @@ public class Main {
         try {
             ConnectionDB.connectDB();
             CreateDB.createDB();
+            WriteDB.writeDB();
             CLoseBD.closeDB();
         } catch (Exception e){
             System.out.println();

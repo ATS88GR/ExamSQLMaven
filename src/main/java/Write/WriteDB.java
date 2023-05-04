@@ -10,14 +10,22 @@ public class WriteDB {
         /*statmt.execute("INSERT INTO 'users'          ('name', 'phone') VALUES ('Petya', 125453); ");
         statmt.execute("INSERT INTO 'users'          ('name', 'phone') VALUES ('Vasya', 321789); ");
         statmt.execute("INSERT INTO 'users'          ('name', 'phone') VALUES ('Masha', 456123); ");*/
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         int countColumn = 1;
         String tempValue = "";
         String columnsSettings="(";
         System.out.println("Input table name:");
-        String tableName = sc.nextLine();
-        resSet = statmt.executeQuery("pragma table_info(table)");
-        System.out.println("How many columns in your table?");
+        String tableName = sc.nextLine();*/
+
+        resSet = statmt.executeQuery("pragma table_info(Authors)");
+        while(resSet.next()) {
+            String [] fields = resSet.getArray();
+            System.out.println(resSet.toString());
+        }
+
+
+
+       /* System.out.println("How many columns in your table?");
         countColumn = Integer.parseInt(sc.nextLine());
         for(int i =0; i<countColumn; i++){
             System.out.println("Input column " + (i+1) + " Name");
@@ -40,8 +48,8 @@ public class WriteDB {
             else columnsSettings+=");";
         }
         String createSample = String.format("CREATE TABLE if not exists '%s '" + columnsSettings, tableName);
-        System.out.println(createSample);
-        return createSample;
+        System.out.println(createSample);*/
+        //return createSample;
     }
 
 }
