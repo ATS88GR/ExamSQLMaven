@@ -50,15 +50,21 @@ public class ReadDB {
 
     public static void queryByThemeAndQuantity() throws SQLException {
         int countOfBooks = 1;
-        resSet = statmt.executeQuery("SELECT Books.Name, Sales.Quantity FROM Books\n" +
+       /* resSet = statmt.executeQuery("SELECT Books.Name, Sales.Quantity FROM Books\n" +
                 "JOIN Themes ON Themes.Id == Books.ThemeId \n" +
                 "JOIN Sales ON Sales.BookId == Books.Id \n" +
-                "WHERE Themes.name == 'novel' AND Sales.Quantity>1;");
+                "WHERE Themes.name == 'novel' AND Sales.Quantity>1;");*/
+        resSet = statmt.executeQuery("SELECT Books.Name AS BookName, sum (Sales.Quantity) AS CountOfSales FROM Books " +
+                "JOIN Themes ON Themes.Id == Books.ThemeId " +
+                "JOIN Sales ON Sales.BookId == Books.Id  " +
+                "WHERE Themes.name == 'novel' " +
+                "GROUP BY Books.Name " +
+                "HAVING CountOfSales >1;");
         System.out.println("Books that selected by theme and quantity");
         while (resSet.next()) {
-            String name = resSet.getString("name");
-            int pages = resSet.getInt("pages");
-            System.out.println(countOfBooks + ". Book: " + name + ", count of pages: " + pages);
+            String name = resSet.getString("BookName");
+            int countOfSales = resSet.getInt("CountOfSales");
+            System.out.println(countOfBooks + ". Book: " + name + ", count of sales: " + countOfSales);
             countOfBooks++;
         }
         System.out.println();
