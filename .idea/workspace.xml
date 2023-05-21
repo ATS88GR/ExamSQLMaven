@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61ac4ea7-abf5-4d9d-8cb0-187b1ed648f8" name="Changes" comment="db without Sales table">
+    <list default="true" id="61ac4ea7-abf5-4d9d-8cb0-187b1ed648f8" name="Changes" comment="add 3-d task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookShop.s3db" beforeDir="false" afterPath="$PROJECT_DIR$/BookShop.s3db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Read/ReadDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Read/ReadDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +56,14 @@
       <option name="presentableId" value="Default" />
       <updated>1683042511961</updated>
     </task>
+    <task id="LOCAL-00001" summary="add 3-d task">
+      <created>1683817084522</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683817084522</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -67,5 +76,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add 3-d task" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 3-d task" />
   </component>
 </project>
